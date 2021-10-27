@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather in <%=name%></title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="../static/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="output">
+      <div class="container text-center">
+        <p class="display-6 d-inline">The Current Weather is <%=desc%></p>
+        <img
+          src="<%=icon%>"
+          alt="weather icon"
+          width="100px"
+          class="d-inline"
+        />
+        <p class="text-center temp text-muted">
+          The Current Temperature in <%=name%> is <%=temp%>
+        </p>
+        <table cellpadding="10">
+          <tr>
+            <td>
+              <strong>Max-Temperature:</strong>
+            </td>
+            <td>
+              <span class="badge bg-info"><%=temp_max%></span>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Min-Temperature:</strong></td>
+            <td><span class="badge bg-info"><%=temp_min%></span></td>
+          </tr>
+          <tr>
+            <td><strong>Wind-speed:</strong></td>
+            <td><span class="badge bg-info"><%=wind_speed%></span></td>
+          </tr>
+          <tr>
+            <td><strong>Humidity:</strong></td>
+            <td><span class="badge bg-info"><%=humidity%></span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

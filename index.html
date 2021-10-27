@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="stylesheet" href="./static/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="content container-fluid">
+      <div class="input bg-info text-center rounded">
+        <h1 class="text-white">Welcome to the Pretty Weather App</h1>
+        <h4 class="text-muted">Here you can get the updated live Weather</h4>
+        <form method="post" action="/getweather" onsubmit="foo()">
+          <strong> Enter the city here:</strong>
+          <input type="search" name="city" id="input" />
+          <input type="submit" value="Submit"/>
+        </form>
+        <p class="badge bg-secondary">Designed by Hari</p>
+      </div>
+    </div>
+
+    <script>
+      function foo() {
+        setTimeout(() => {
+          document.getElementById("input").value = "";
+        }, 100);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+  background-image: url("./img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.content {
+  margin-top: 30vh;
+}
+.content * {
+  margin-bottom: 20px;
+}
+input {
+  outline: none;
+}
+.output {
+  margin-top: 30vh;
+  background-color: rgb(219, 214, 214);
+  border-radius: 7px;
+  box-shadow:1px 1px 10px 3px  black;
+}
+table {
+  margin-left: 35vw;
+  border-collapse: collapse;
+  border: 5px double yellowgreen;
+}
+.output > .container {
+  padding: 30px;
+}
+.temp {
+  margin-top: -20px;
+}
